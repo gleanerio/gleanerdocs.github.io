@@ -1,8 +1,3 @@
----
-layout: post
-title: Blogging Like a Hacker
----
-
 ## Welcome to GitHub Pages u2
 
 You can use the [editor on GitHub](https://github.com/gleanerio/gleanerdocs.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.

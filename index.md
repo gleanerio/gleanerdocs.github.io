@@ -5,7 +5,7 @@ nav_order: 1
 ---
 
 
-## About
+## Gleaner Documentation
 
 The start of the documentation site for Gleaner and Nabu
 

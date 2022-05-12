@@ -1,13 +1,7 @@
-## Gleaner and Nabu Docs
+## About
 
-You can use the [editor on GitHub](https://github.com/gleanerio/gleanerdocs.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The start of the documentation site for Gleaner and Nabu
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
----
-layout: post
-title: Blogging Like a Hacker
----
 
 ### Markdown
 

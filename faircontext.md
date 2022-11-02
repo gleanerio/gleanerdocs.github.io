@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Gleaner
-nav_order: 1
+title: Gleaner and FAIR
+nav_order: 8
 ---
 
 

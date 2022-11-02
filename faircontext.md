@@ -7,8 +7,18 @@ nav_order: 8
 
 ## Gleaner in the Context of FAIR Principle
 
+### What is Gleaner
 
+Gleaner is a tool for extracting JSON-LD from web pages. You provide Gleaner a list of sites to index and it will access and retrieve pages based on the sitemap.xml of the domain(s). Gleaner can then check for well formed and valid structure in documents. The product of Gleaner runs can then be used to form Knowledge Graphs, Full-Text Indexes, Semantic Indexes Spatial Indexes or other products to drive discovery and use.
 
+![Basic activity](assets/images/gleaner_ad1.png)
+
+### Principles over Project
+
+The approach to using structured data on the web can be guided by the philosophy of _Principles over Project_.  The that import
+aspects are the basic principles and not the implementation or code used to address the goal.  Nothing in Gleaner or in an activity 
+implementation using Gleaner is critical.   All the components of the approach can be replaced with other approaches, including Gleaner
+itself which can be replaced with many other solid software packages.  
 
 
 | Principles                 | Project                                              |
@@ -23,18 +33,17 @@ nav_order: 8
 
 ![IoW activity diagram](assets/images/iow_activity_diagram.png)
 
-
 ## Personnas 
-
-![personnas](assets/images/personnas.png)
 
 ## About 
 
 During the deisgn process of the Ocean InfoHub (OIH), many of the design approached leverage three
-personas that help define the various archtypes of people who engage with OIH.  It should not be assumed
+personas that help define the various archetypes of people who engage with OIH.  It should not be assumed
 these scope all the potential persona or that a person or organization scope only one.  It is quite possible
-to many.   These are simply design approaches representing potenial models or characters.   They 
+to many.   These are simply design approaches representing potential models or characters.   They 
 are tools used in the design process of OIH.
+
+![personnas](assets/images/personnas.png)
 
 ## Persona: Publisher
 
@@ -90,8 +99,8 @@ the Go-FAIR [FAIR Principles](https://www.go-fair.org/fair-principles/) page.
 | Use PIDs and Controlled Vocabularies             | Harvested data graphs (JSON-LD) to form a KG.  Keywords and other elements leverage PIDs and resolvable terms |
 | Validation here though indexing and inspection   | Data graphs can be framed and used for spatial, text or semantic indexes                                      |
 
-
 ### Accessible  
+
 | Principles             | Project                                                                                                                               |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Distribution URLs      | Implemented with schema:distribution                                                                                                  |
@@ -100,6 +109,7 @@ the Go-FAIR [FAIR Principles](https://www.go-fair.org/fair-principles/) page.
 
 
 ### Interoperable
+
 | Principles                    | Project                                                                                 |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
 | Open formats                  | JSON-LD                                                                                 |

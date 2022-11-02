@@ -1,43 +1,109 @@
 ## Config File
 
 
-You can use the [editor on GitHub](https://github.com/gleanerio/gleanerdocs.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Source
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Sources can be defined as two type. A sitemap, which is a traditional sitemap that 
+points to resources or a sitemap index that points to a set of sitemaps.
 
----
-layout: post
-title: Blogging Like a Hacker
----
+The other is a sitegraph, which is a pre-computed graph for a site.  
 
-### Markdown
+Examples of their formats respectively are:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### sitemap
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```yaml
+ sourcetype: sitemap
+  name: unidata
+  logo: ""
+  url: https://www.unidata.ucar.edu/sitemap.xml
+  headless: false
+  pid: https://www.re3data.org/repository/r3d100010355
+  propername: UNIDATA
+  domain: http://www.unidata.ucar.edu/
+  active: false
+  credentialsfile: ""
+  other: {}
+  headlesswait: 0
+  delay: 0
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+#### sitegraph
 
-### Jekyll Themes
+```yaml  
+- sourcetype: sitegraph
+  name: aquadocs
+  logo: ""
+  url: https://oih.aquadocs.org/aquadocs.json
+  headless: false
+  pid: http://hdl.handle.net/1834/41372
+  propername: AquaDocs
+  domain: https://aquadocs.org
+  active: false
+  credentialsfile: ""
+  other: {}
+  headlesswait: 0
+  delay: 0
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gleanerio/gleanerdocs.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Example config file
 
-### Support or Contact
+A complete configuration file follows.  
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```yaml
+context:
+  cache: true
+  strict: true
+contextmaps:
+  - prefix: "https://schema.org/"
+    file: "./jsonldcontext.json"  # wget http://schema.org/docs/jsonldcontext.jsonld
+  - prefix: "http://schema.org/"
+    file: "./jsonldcontext.json"  # wget http://schema.org/docs/jsonldcontext.jsonld
+gleaner:
+  mill: true
+  runid: runX
+  summon: true
+summoner:
+    after: ""
+    delay:  # milliseconds (1000 = 1 second) to delay between calls (will FORCE threads to 1)
+    headless: http://geocodes-dev.earthcube.org:9222
+    mode: full
+    threads: 5
+millers:
+  graph: true
+minio:
+  address:
+  port:
+  ssl:
+  accesskey:
+  secretkey:
+  bucket:
+sources:
+- sourcetype: sitemap
+  name: unidata
+  logo: ""
+  url: https://www.unidata.ucar.edu/sitemap.xml
+  headless: false
+  pid: https://www.re3data.org/repository/r3d100010355
+  propername: UNIDATA
+  domain: http://www.unidata.ucar.edu/
+  active: false
+  credentialsfile: ""
+  other: {}
+  headlesswait: 0
+  delay: 0
+- sourcetype: sitegraph
+  name: aquadocs
+  logo: ""
+  url: https://oih.aquadocs.org/aquadocs.json
+  headless: false
+  pid: http://hdl.handle.net/1834/41372
+  propername: AquaDocs
+  domain: https://aquadocs.org
+  active: false
+  credentialsfile: ""
+  other: {}
+  headlesswait: 0
+  delay: 0
+
+```

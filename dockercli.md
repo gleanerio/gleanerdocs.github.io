@@ -1,3 +1,9 @@
+---
+layout: default
+title: CLI Docker
+nav_order: 6
+---
+
 # Gleaner CLI Docker Image
 
 ## About

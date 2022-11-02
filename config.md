@@ -1,3 +1,9 @@
+---
+layout: default
+title: Gleaner Config
+nav_order: 3
+---
+
 ## Config File
 
 

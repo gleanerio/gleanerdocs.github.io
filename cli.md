@@ -1,43 +1,25 @@
+---
+layout: default
+title: CLI use
+nav_order: 5
+---
+
 ## CLI
 
 
-You can use the [editor on GitHub](https://github.com/gleanerio/gleanerdocs.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
----
-layout: post
-title: Blogging Like a Hacker
----
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gleanerio/gleanerdocs.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+EarthCube Gleaner
+Usage of /tmp/go-build589932266/b001/exe/main:
+  -cfg string
+        Configuration file (can be YAML, JSON) Do NOT provide the extension in the command line. -cfg file not -cfg file.yml (default "config")
+  -log string
+        The log level to output (trace | debug | info | warn | error | fatal) (default "warn")
+  -mode string
+        Set the mode (full | diff) to index all or just diffs (default "full")
+  -rude
+        Ignore any robots.txt crawl delays or allow / disallow statements
+  -setup
+        Run Gleaner configuration check and exit
+  -source string
+        Override config file source(s) to specify an index target
+```

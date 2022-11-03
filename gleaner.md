@@ -3,8 +3,7 @@ layout: default
 title: Gleaner
 nav_order: 2
 ---
-
-## Gleaner
+# Gleaner
 
 
 Documentation will be coming here soon.  For now visit the 

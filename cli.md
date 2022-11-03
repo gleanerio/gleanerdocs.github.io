@@ -4,7 +4,7 @@ title: CLI use
 nav_order: 5
 ---
 
-## CLI
+# CLI
 
 ## QuickStart
 

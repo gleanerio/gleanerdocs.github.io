@@ -4,10 +4,10 @@ title: Gleaner Config
 nav_order: 3
 ---
 
-## Config File
+# Config File
 
 
-### Source
+## Source
 
 Sources can be defined as two type. A sitemap, which is a traditional sitemap that 
 points to resources or a sitemap index that points to a set of sitemaps.
@@ -16,7 +16,7 @@ The other is a sitegraph, which is a pre-computed graph for a site.
 
 Examples of their formats respectively are:
 
-#### sitemap
+### sitemap
 
 ```yaml
  sourcetype: sitemap
@@ -34,7 +34,7 @@ Examples of their formats respectively are:
   delay: 0
 ```
 
-#### sitegraph
+### sitegraph
 
 ```yaml  
 - sourcetype: sitegraph
@@ -52,7 +52,7 @@ Examples of their formats respectively are:
   delay: 0
 ```
 
-### Example config file
+## Example config file
 
 A complete configuration file follows.  You can download the file [here](assets/resources/exampleGleanerConfig.yml).  
 

@@ -5,9 +5,9 @@ nav_order: 7
 ---
 
 
-## Gleaner in the Context of FAIR Principle
+# Gleaner in the Context of FAIR Principle
 
-### What is Gleaner
+## What is Gleaner
 
 Gleaner is a tool for extracting JSON-LD from web pages. You provide Gleaner a list of sites to index and it will access and retrieve pages based on the sitemap.xml of the domain(s). Gleaner can then check for well formed and valid structure in documents. The product of Gleaner runs can then be used to form Knowledge Graphs, Full-Text Indexes, Semantic Indexes Spatial Indexes or other products to drive discovery and use.
 

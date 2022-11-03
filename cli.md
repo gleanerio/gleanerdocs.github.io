@@ -20,26 +20,27 @@ Below is an example of pulling this down for a Linux system on ADM64 architectur
 wget https://github.com/gleanerio/gleaner/releases/download/v3.0.4-dev/gleaner-v3.0.4-dev-linux-amd64.tar.gz
 ```
 
-You will need a configuration file and an example such file can be found in the resources directory.
+You will need a configuration file and an example such file can be found in the resources directory.  See also 
+the config file in the Gleaner Config page.
 
 You can set the values in this configuration file.  However, you can leave the Minio value empty and pass
 then via environment variables.  This sort of approach can work better in some orchestration environments or just 
 be a safer approach to managing these keys.  
 
 ```
-export MINIO_ADDRESS=
-export MINIO_PORT=
-export MINIO_USE_SSL=
-export MINIO_ACCESS_KEY=
-export MINIO_SECRET_KEY=
-export MINIO_BUCKET=
+export MINIO_ADDRESS=localhost
+export MINIO_PORT=9000
+export MINIO_USE_SSL=false
+export MINIO_ACCESS_KEY=KEYVALUE
+export MINIO_SECRET_KEY=SECRETVALUE
+export MINIO_BUCKET=mybucket
 ```
 
 With those set and your configuration file in palce you can run Gleaner with 
 
 
 ```
-  ./gleaner -cfg gleanerconfig.yaml --source iris -rude
+  ./gleaner -cfg gleanerconfig.yaml --source nameFromCfgFile -rude
 ```
 
 

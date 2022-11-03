@@ -4,16 +4,25 @@ title: Gleaner and FAIR
 nav_order: 7
 ---
 
-
 # Gleaner in the Context of FAIR Principle
 
 ## What is Gleaner
 
 Gleaner is a tool for extracting JSON-LD from web pages. You provide Gleaner a list of sites to index and it will access 
 and retrieve pages based on the sitemap.xml of the domain(s). Gleaner can then check for well formed and valid structure 
-in documents. The product of Gleaner runs can then be used to form Knowledge Graphs, Full-Text Indexes, Semantic Indexesi,
+in documents. The product of Gleaner runs can then be used to form Knowledge Graphs, Full-Text Indexes, Semantic Indexes,
 Spatial Indexes or other products to drive discovery and use.
 
+GleanerIO is the set of reference tools that have been developed to support organizations to harvest and leverage 
+structure data on the web.  The tools can be found at: [https://github.com/gleanerio](https://github.com/gleanerio) and include:
+
+* Gleaner:  a structured data harvesting tool
+* Nabu: an ETL/ELT tool for loading JSON-LD data graphs into various data systems such as triplestores, text index, spatial indexes, etc.
+* Scheduler: an automated workflow system built on [Dagster](https://dagster.io/)
+* Example Jupyter notebooks
+* Example web UIs
+* Documentation 
+  
 ![Basic activity](assets/images/gleaner_ad1.png)
 
 ### Principles over Project
@@ -98,7 +107,7 @@ the Go-FAIR [FAIR Principles](https://www.go-fair.org/fair-principles/) page.
 
 | Principles                                       | Project                                                                                                       |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| Resolvable URIs that resolve to metadata records | Web architecture based indexing  Proper @id use in JSON-LD                                                    |
+| Resolvable URIs that resolve to metadata records | Web architecture based indexing  Proper @id use in JSON-LD                                                   |
 | Use PIDs and Controlled Vocabularies             | Harvested data graphs (JSON-LD) to form a KG.  Keywords and other elements leverage PIDs and resolvable terms |
 | Validation here though indexing and inspection   | Data graphs can be framed and used for spatial, text or semantic indexes                                      |
 
@@ -106,9 +115,9 @@ the Go-FAIR [FAIR Principles](https://www.go-fair.org/fair-principles/) page.
 
 | Principles             | Project                                                                                                                               |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Distribution URLs      | Implemented with schema:distribution                                                                                                  |
-| Access control details | Implemednted with schema:conditionOfAccess                                                                                            |
-| Validation             | We can implement validation of these elements with SHACL  This allows us to build reports and continuous integration style approaches |
+| Distribution URLs      | Implemented with schema:distribution or related                                                                                       |
+| Access control details | Implemented with schema:conditionOfAccess or related                                                                                  |
+| Validation             | We can implement validation of these elements with SHACL.  This allows us to build reports and continuous integration style approaches |
 
 
 ### Interoperable
@@ -123,13 +132,14 @@ the Go-FAIR [FAIR Principles](https://www.go-fair.org/fair-principles/) page.
 
 | Principles          | Project                                                   |
 | ------------------- | --------------------------------------------------------- |
-| License             | shcema:license (SHACL validation)                         |
+| License             | schema:license or related (again, here we can leverage SHACL validation)                         |
 | Community standards | Ocean InfoHub, POLDER, CCADI, GeoCODEs, Internet of Water |
 
 
 ## Users 
 
-The users of Gleaner are in many ways, implementation networks.  
+The users of GleanerIO can really be seen as examples of things like [Go FAIR Implementation Networks ](https://www.go-fair.org/implementation-networks/)or related.  
+Examples of such groups using this tooling follow. 
 
 # Users of Gleaner
 

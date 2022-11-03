@@ -9,16 +9,19 @@ nav_order: 7
 
 ## What is Gleaner
 
-Gleaner is a tool for extracting JSON-LD from web pages. You provide Gleaner a list of sites to index and it will access and retrieve pages based on the sitemap.xml of the domain(s). Gleaner can then check for well formed and valid structure in documents. The product of Gleaner runs can then be used to form Knowledge Graphs, Full-Text Indexes, Semantic Indexes Spatial Indexes or other products to drive discovery and use.
+Gleaner is a tool for extracting JSON-LD from web pages. You provide Gleaner a list of sites to index and it will access 
+and retrieve pages based on the sitemap.xml of the domain(s). Gleaner can then check for well formed and valid structure 
+in documents. The product of Gleaner runs can then be used to form Knowledge Graphs, Full-Text Indexes, Semantic Indexesi,
+Spatial Indexes or other products to drive discovery and use.
 
 ![Basic activity](assets/images/gleaner_ad1.png)
 
 ### Principles over Project
 
-The approach to using structured data on the web can be guided by the philosophy of _Principles over Project_.  The that import
+The approach to using structured data on the web can be viewed in the context of _Principles over Project_.  The view that the import
 aspects are the basic principles and not the implementation or code used to address the goal.  Nothing in Gleaner or in an activity 
 implementation using Gleaner is critical.   All the components of the approach can be replaced with other approaches, including Gleaner
-itself which can be replaced with many other solid software packages.  
+itself which can be replaced with other software packages.  
 
 
 | Principles                 | Project                                              |
@@ -130,9 +133,7 @@ The users of Gleaner are in many ways, implementation networks.
 
 # Users of Gleaner
 
-
 The following are some communities using or exploring the use of Gleaner.
-
 
 
 ## <img src="./assets/images/geocodes.png" width="100" >
@@ -148,6 +149,9 @@ GeoCODES is an NSF Earthcube program effort to better enable cross-domain discov
 
 The Ocean InfoHub (OIH) Project aims to improve access to global oceans information, data and knowledge products for management and sustainable development.The OIH will link and anchor a network of regional and thematic nodes that will improve online access to and synthesis of existing global, regional and national data, information and knowledge resources, including existing clearinghouse mechanisms. The project will not be establishing a new database, but will be supporting discovery and interoperability of existing information systems.The OIH Project is a three-year project funded by the Government of Flanders, Kingdom of Belgium, and implemented by the IODE Project Office of the IOC/UNESCO.
 
+* [OIH Book](https://book.oceaninfohub.org)
+* [Example Validation](https://github.com/gleanerio/notebooks/blob/master/notebooks/validation/output/report_07-18-2022-15-11-18.pdf)
+* [Validation repo](https://github.com/gleanerio/notebooks/tree/master/notebooks/validation)
 
 ## Polder: Polar Data Discovery Enhancement Research
 

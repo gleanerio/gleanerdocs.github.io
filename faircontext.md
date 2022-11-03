@@ -1,12 +1,67 @@
 ---
 layout: default
-title: Gleaner and FAIR
+title: Communities and FAIR
 nav_order: 7
 ---
 
-# Gleaner in the Context of FAIR Principle
+# Gleaner in the Context of Communities Leveraging FAIR Principle
 
-## What is Gleaner
+## The Community Context
+
+This document provides some context to where GleanerIO can be leveraged by communities who are implementing FAIR principles.   These could be communities of practice or groups of domain related facilities.  
+
+To provide further context a set of personas can be defined that help set the stage and provide scoping for the various parts of a community and their relations.
+
+
+## Personas
+
+## About
+
+To provide better context we can define three personas to better express the roles within a community.  
+
+![personnas](assets/images/personnas.png)
+
+## Persona: Publisher
+
+The Publisher is engaged authoring the JSON-LD documents and publishing them 
+to the web.  This persona is focused on describing and presenting structured data on the web
+to aid in the discovery and use the resources they manage. 
+ Details on this persona can be found in the [Publisher](../publishing/publishing.md) section.  
+Additionally, this persona would be leveraging this encoding described in the [JSON-LD Foundation](../foundation/foundation.md) section and the 
+profiles described in the [Thematic Patterns](../thematics/README.md). 
+
+## Persona: Indexer  
+
+The Indexer or Aggregator is a person or organization who is indexing resources on the 
+web using the structured data on the web patterns described in this documentation.  
+Their goal is to efficiently and efficiently index the resources exposed by the Publisher 
+persona and generate usable indexes.  Further, they would work to exposed these indexes in 
+a manner that is usable by the User persona.
+Details on the approach used by OIH and potential alternatives can be found in the 
+[Aggregator](../indexing/index.md) section.
+
+## Persona: User
+
+The user is the individual or community who wished to leverage the indexes generated
+as a result of the publishing and aggregation activities. The user may be using the 
+developed knowledge graph or some web interface built on top of the knowledge graph or 
+other index.  They may also use query languages like SPARQL or other APIs or even 
+directly work with the underlying data warehouse of collected data graphs.  
+
+User tools may be web sites or scientific notebooks.  Some examples of these 
+user experiences are described in the [User](../users/referenceclient.md) section.
+
+## FAIR Implementation Network
+
+We can think of the above personnas and how they might be represented in a FAIR 
+implementation network.  The diagram that follow represents some of these relations.
+
+
+![relations](assets/images/relations.png)
+
+
+
+## Gelaner
 
 Gleaner is a tool for extracting JSON-LD from web pages. You provide Gleaner a list of sites to index and it will access 
 and retrieve pages based on the sitemap.xml of the domain(s). Gleaner can then check for well formed and valid structure 
@@ -44,58 +99,6 @@ itself which can be replaced with other software packages.
 ## Example activity diagram for one user (Internet of Water)
 
 ![IoW activity diagram](assets/images/iow_activity_diagram.png)
-
-## Personnas 
-
-## About 
-
-During the deisgn process of the Ocean InfoHub (OIH), many of the design approached leverage three
-personas that help define the various archetypes of people who engage with OIH.  It should not be assumed
-these scope all the potential persona or that a person or organization scope only one.  It is quite possible
-to many.   These are simply design approaches representing potential models or characters.   They 
-are tools used in the design process of OIH.
-
-![personnas](assets/images/personnas.png)
-
-## Persona: Publisher
-
-In OIH the Publisher is engaged authoring the JSON-LD documents and publishing them 
-to the web.  This persona is focused on describing and presenting structured data on the web
-to aid in the discovery and use the resources they manage. 
- Details on this persona can be found in the [Publisher](../publishing/publishing.md) section.  
-Additionally, this persona would be leveraging this encoding described in the [JSON-LD Foundation](../foundation/foundation.md) section and the 
-profiles described in the [Thematic Patterns](../thematics/README.md). 
-
-## Persona: Indexer  
-
-In OIH the Aggregator is a person or organization who is indexing resources on the 
-web using the structured data on the web patterns described in this documentation.  
-Their goal is to efficiently and efficiently index the resources exposed by the Publisher 
-persona and generate usable indexes.  Further, they would work to exposed these indexes in 
-a manner that is usable by the User persona.
-Details on the approach used by OIH and potential alternatives can be found in the 
-[Aggregator](../indexing/index.md) section.
-
-## Persona: User
-
-The user is the individual or community who wished to leverage the indexes generated
-as a result of the publishing and aggregation activities. The user may be using the 
-developed knowledge graph or some web interface built on top of the knowledge graph or 
-other index.  They may also use query languages like SPARQL or other APIs or even 
-directly work with the underlying data warehouse of collected data graphs.  
-
-User tools may be web sites or scientific notebooks.  Some examples of these 
-user experiences are described in the [User](../users/referenceclient.md) section.
-
-## FAIR Implementation Network
-
-We can think of the above personnas and how they might be represented in a FAIR 
-implementation network.  The diagram that follow represents some of these relations.
-
-
-![relations](assets/images/relations.png)
-
-
 ## FAIR Principles
 
 Recall the FAIR principles which are noted at many locations.  For reference you can visit

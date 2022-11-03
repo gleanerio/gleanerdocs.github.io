@@ -6,44 +6,6 @@ nav_order: 6
 
 # Gleaner CLI Docker Image
 
-## QuickStart
-
-Before using Gleaner, not that Gleaner does have one prerequisit in the form of an accessible S3 compliant 
-object store.  This can be AWS S3, Google Cloud Storage or others.  Also, there is the open source 
-and free Minio object store which is used in many of the examples in GleanerIO. 
-
-Once you have the object store running and ready you are ready to run Gleaner. 
-Pull down the release that matches your ssysem from [version 3.0.4](https://github.com/gleanerio/gleaner/releases/tag/v3.0.4-dev).
-Below is an example of pulling this down for a Linux system on ADM64 architecture.  
-
-```
-wget https://github.com/gleanerio/gleaner/releases/download/v3.0.4-dev/gleaner-v3.0.4-dev-linux-amd64.tar.gz
-```
-
-You will need a configuration file and an example such file can be found in the resources directory.
-
-You can set the values in this configuration file.  However, you can leave the Minio value empty and pass
-then via environment variables.  This sort of approach can work better in some orchestration environments or just 
-be a safer approach to managing these keys.  
-
-```
-export MINIO_ADDRESS=
-export MINIO_PORT=
-export MINIO_USE_SSL=
-export MINIO_ACCESS_KEY=
-export MINIO_SECRET_KEY=
-export MINIO_BUCKET=
-```
-
-With those set and your configuration file in palce you can run Gleaner with 
-
-
-```
-  ./gleaner -cfg gleanerconfig.yaml --source iris -rude
-```
-
-
-
 ## About
 
 This is a new approach for quick starts with Gleaner.  It is a script that exposes

@@ -163,7 +163,7 @@ There is also a [Minio Client Docker image](https://hub.docker.com/r/minio/minio
 that you can use as well but it will be more difficult to use with the following scripts due
 to container isolation. 
 
-To man an entry in the mc config, use:
+To make an entry in the mc config, use:
 
 ```
 mc alias set oih  http://localhost:9000 worldsbestaccesskey worldsbestsecretkey

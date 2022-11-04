@@ -9,8 +9,8 @@ nav_order: 3
 
 ## Source
 
-Sources can be defined as two type. A sitemap, which is a traditional sitemap that 
-points to resources or a sitemap index that points to a set of sitemaps.
+Sources can be defined as two types. A sitemap, which is a traditional sitemap that 
+points to resources, or a sitemap index that points to a set of sitemaps.
 
 The other is a sitegraph, which is a pre-computed graph for a site.  
 

@@ -86,7 +86,7 @@ extensive documentation for use.  The OCI/Docker approach is provided by Minio a
 ```
 mkdir -p ~/minio/data
 
-podman run \
+podman run --privileged  --group-add keep-groups \
    -p 9000:9000 \
    -p 9090:9090 \
    -v ~/minio/data:/data \
@@ -94,6 +94,31 @@ podman run \
    -e "MINIO_ROOT_PASSWORD=CHANGEME123" \
    quay.io/minio/minio server /data --console-address ":9090"
    ```
+
+Point your browser at:  http://localhost:9090/buckets 
+and use the USER and PASSWORD you set above.
+
+You should see something like:
+
+![step 1](assets/images/miniostep1.png)
+
+Next you will need to create a bucket.
+
+![step 2](assets/images/miniostep2.png)
+
+The next step is to create access keys for Gleaner to.  Select the _Access Keys_
+menu item.  Use the create access key button to generate a set of keys.  
+
+![step 3](assets/images/miniostep3.png)
+
+Note these down or download them.  The secret will not be shown again and you will
+need it.
+
+![step 4](assets/images/miniostep4.png)
+
+At this point Minio should be set up, running, have a bucket you can use and you have
+the access values to use for Gleaner.  You will need these in the _Configuration_ section
+below. 
 
 ### Headless Chrome
 

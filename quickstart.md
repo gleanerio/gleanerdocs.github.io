@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CLI Docker
+title: CLI Quick Start
 nav_order: 6
 ---
 
@@ -10,20 +10,7 @@ nav_order: 6
 
 This document provides a quick approach to the setup and use of gleaner.
 
-```mermaid
-graph LR;
-    Sitemap-->Gleaner;
-    Gleaner-->S3:::oci;
-    Gleaner-->HeadlessChrome:::oci;
-    HeadlessChrome-->Gleaner;
-    S3-->ELT-Nabu;
-    ELT-Nabu-->KnowledgeGraph;
-    classDef oci fill:#f96;
-    subgraph OCI
-      S3
-      HeadlessChrome
-    end
-```
+![Simple Flow](./assets/images/simpleflow.png)
 
 The basic flow of Gleaner begins with a data source sitemap.  That sitemap is 
 read by Gleaner. Gleaner will leverage an object store, S3 compliant, and, if 

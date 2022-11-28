@@ -274,6 +274,25 @@ sources:
 
 ### Run
 
+The current set of flags follows:
+
+```bash
+EarthCube Gleaner
+Usage of /tmp/go-build589932266/b001/exe/main:
+  -cfg string
+        Configuration file (can be YAML, JSON) Do NOT provide the extension in the command line. -cfg file not -cfg file.yml (default "config")
+  -log string
+        The log level to output (trace | debug | info | warn | error | fatal) (default "warn")
+  -mode string
+        Set the mode (full | diff) to index all or just diffs (default "full")
+  -rude
+        Ignore any robots.txt crawl delays or allow / disallow statements
+  -setup
+        Run Gleaner configuration check and exit
+  -source string
+        Override config file source(s) to specify an index target
+```
+
 With the above configurations set we should be able to run Gleaner with a
 specified source.  Note the example only has one source so this is not needed.  However
 when you have multiple source you can specify a source with the ```-source``` flag.
@@ -282,6 +301,8 @@ This can be useful when running via a scheduling system or cron and you want to 
 certain targets on a given schedule.  
 
 If you exclude this ```--source``` flag, all the source will be indexed in a run.  
+
+So an example run would look like the following.  
 
 
 ```bash

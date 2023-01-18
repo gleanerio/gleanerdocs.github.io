@@ -4,7 +4,6 @@ title: GleanerIO
 nav_order: 1
 ---
 
-
 # Gleaner Documentation
 
 [gleaner.io](https://gleaner.io/)

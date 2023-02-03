@@ -1,4 +1,7 @@
 site_name: Gleaner Documentation
+docs_dir: .
+repo_url: https://github.com/gleanerio/gleanerdocs.github.io
+edit_uri: blob/docs/
 #theme: 'material'
 #theme: 'mkdocs'
 theme:
@@ -35,10 +38,10 @@ plugins:
 #      include:
 #        - "./docs/GeoCODES-Metadata/schemas/"
 nav:
-  - Home: index.md
+  - Gleaner: index.md
 
   - Running:
-    - Quick Start: quicstart.md
+    - Quick Start: quicsktart.md
     - CLI: cli.md
     - Docker CLI: dockercli.md
   - Configuration: config.md

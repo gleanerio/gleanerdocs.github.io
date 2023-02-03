@@ -10,7 +10,7 @@ nav_order: 6
 
 This document provides a quick approach to the setup and use of gleaner.
 
-![Simple Flow](./assets/images/simpleflow.png)
+![Simple Flow](assets/images/simpleflow.png)
 
 The basic flow of Gleaner begins with a data source sitemap.  That sitemap is 
 read by Gleaner. Gleaner will leverage an object store, S3 compliant, and, if 
@@ -408,7 +408,7 @@ Docker.  For me, I had to use a real local IP address for my network, you might 
 
 Hopefully you will see something like the following.
 
-![Blazegrah](./assets/images/blaze.png)
+![Blazegrah](assets/images/blaze.png)
 
 We loaded into the default _kb_ namespace, so we should be good there.  We can see that is listed 
 as the active namespace at the _Current Namespace: kb_ report.  
@@ -428,7 +428,7 @@ LIMIT 10
 A very simple SPARQL to give us the first 10 results from the triplestore.  If all has gone well, 
 we should see something like:
 
-![Blazegrah](./assets/images/simplequery.png)
+![Blazegrah](assets/images/simplequery.png)
 
 You can explore more about SPARQL and the wide range of queries you can do with it
 at the W3C [SPARQL 1.1 Query Language](https://www.w3.org/TR/sparql11-query/) reference. 

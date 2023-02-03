@@ -1,5 +1,5 @@
 site_name: Gleaner Documentation
-docs_dir: .
+
 repo_url: https://github.com/gleanerio/gleanerdocs.github.io
 edit_uri: blob/docs/
 #theme: 'material'

@@ -22,7 +22,7 @@ To provide better context we can define three personas to better express the rol
 
 ### Persona: Publisher
 
-The Publisher is engaged authoring the JSON-LD documents and publishing them 
+The Publisher is engaged with authoring the JSON-LD documents and publishing them 
 to the web.  This persona is focused on describing and presenting structured data on the web
 to aid in the discovery and use the resources they manage. 
  Details on this persona can be found in the [Publisher](../publishing/publishing.md) section.  
@@ -52,8 +52,8 @@ user experiences are described in the [User](../users/referenceclient.md) sectio
 
 ## FAIR Implementation Network
 
-We can think of the above personnas and how they might be represented in a FAIR 
-implementation network.  The diagram that follow represents some of these relations.
+We can think of the above personas and how they might be represented in a FAIR 
+implementation network.  The diagram that follows represents some of these relations.
 
 ![relations](assets/images/relations.png)
 
@@ -128,7 +128,7 @@ the Go-FAIR [FAIR Principles](https://www.go-fair.org/fair-principles/) page.
 | Principles          | Project                                                                  |
 | ------------------- | ------------------------------------------------------------------------ |
 | License             | schema:license or related (again, here we can leverage SHACL validation) |
-| Community standards | Ocean InfoHub, POLDER, CCADI, GeoCODEs, Internet of Water                |
+| Community standards | Ocean InfoHub, POLDER, CCADI, GeoCODES, Internet of Water                |
 
 ## Users
 
@@ -149,7 +149,7 @@ GeoCODES is an NSF Earthcube program effort to better enable cross-domain discov
 
 [https://oceaninfohub.org/](https://oceaninfohub.org/)
 
-The Ocean InfoHub (OIH) Project aims to improve access to global oceans information, data and knowledge products for management and sustainable development.The OIH will link and anchor a network of regional and thematic nodes that will improve online access to and synthesis of existing global, regional and national data, information and knowledge resources, including existing clearinghouse mechanisms. The project will not be establishing a new database, but will be supporting discovery and interoperability of existing information systems.The OIH Project is a three-year project funded by the Government of Flanders, Kingdom of Belgium, and implemented by the IODE Project Office of the IOC/UNESCO.
+The Ocean InfoHub (OIH) Project aims to improve access to global oceans information, data and knowledge products for management and sustainable development. The OIH will link and anchor a network of regional and thematic nodes that will improve online access to and synthesis of existing global, regional and national data, information and knowledge resources, including existing clearinghouse mechanisms. The project will not be establishing a new database, but will be supporting discovery and interoperability of existing information systems. The OIH Project is a three-year project funded by the Government of Flanders, Kingdom of Belgium, and implemented by the IODE Project Office of the IOC/UNESCO.
 
 * [OIH Book](https://book.oceaninfohub.org)
 * [Example Validation](https://github.com/gleanerio/notebooks/blob/master/notebooks/validation/output/report_07-18-2022-15-11-18.pdf)

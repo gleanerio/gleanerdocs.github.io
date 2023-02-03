@@ -50,13 +50,12 @@ total 1356
 -rwxr-xr-x 1 fils fils    1852 Aug 15 14:06 gleanerDocker.sh
 ```
 
-Let's see if we can setup our support infrastructure for Gleaner.  The 
-file gleaner-IS.yml is a docker compose file that will set up the object store,
+Let's see if we can set up our support infrastructure for Gleaner.  The 
+file gleaner-IS.yml is a docker compose file that will set up the object store
 and a triplestore.
 
-To do this we need to set up a few environment variables.  To do this we can 
-leverage the setenvIS.sh script.  This script will set up the environment we need.
-Note you can also use a .env file or other approaches.  You can references 
+To do this, we need to set up a few environment variables by leveraging the setenvIS.sh script.  This script will set up the environment we need.
+Note you can also use a .env file or other approaches.  You can reference 
 the [Environment variables in Compose](https://docs.docker.com/compose/environment-variables/) documentation.  
 
 ```bash
@@ -86,7 +85,7 @@ working config file was downloaded.
 > Note:  This config file will change...  it's pointing to an OIH partner 
 > and I will not do that for the release.  I have a demo site I will use.  
 
-Next we need to setup our object for Gleaner.  Gleaner itself can do this 
+Next we need to set up our object for Gleaner.  Gleaner itself can do this 
 task so we will use 
 
 ```bash
@@ -140,7 +139,7 @@ millers.go:81: Miller run time: 0.024649
 ## Working with results
 
 If all has gone well, at this point you have downloaded the JSON-LD documents into Minio or 
-some other object store.Next we will install a client that we can use to work with these objects.
+some other object store. Next we will install a client that we can use to work with these objects.
 
 Note, there is a web interface exposed on the port mapped in the Docker compose file.
 In the case of these demo that is 9000.  You can access it at
@@ -164,7 +163,7 @@ There is also a [Minio Client Docker image](https://hub.docker.com/r/minio/minio
 that you can use as well but it will be more difficult to use with the following scripts due
 to container isolation. 
 
-To man an entry in the mc config use:
+To make an entry in the mc config, use:
 
 ```
 mc alias set oih  http://localhost:9000 worldsbestaccesskey worldsbestsecretkey
@@ -190,7 +189,7 @@ You can explore mc and see how to copy and work with the object store.
 As part of our Docker compose file we also spun up a triplestore.  Let's use that now.  
 
 
-Now Download the minio2blaze.sh script.
+Now download the minio2blaze.sh script.
 
 ```bash
 curl -O https://raw.githubusercontent.com/earthcubearchitecture-project418/gleaner/master/scripts/minio2blaze.sh
@@ -239,7 +238,7 @@ where
 LIMIT 10
 ```
 
-A very simple SPARQL to give us the first 10 results from the triplestore.  If all has gone well, 
+A very simple SPARQL query to give us the first 10 results from the triplestore.  If all has gone well, 
 we should see something like:
 
 ![Blazegrah](./assets/images/simplequery.png)

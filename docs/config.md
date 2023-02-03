@@ -19,7 +19,7 @@ Examples of their formats respectively are:
 ### sitemap
 
 ```yaml
- sourcetype: sitemap
+  sourcetype: sitemap
   name: unidata
   logo: ""
   url: https://www.unidata.ucar.edu/sitemap.xml

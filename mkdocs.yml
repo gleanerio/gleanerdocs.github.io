@@ -41,7 +41,7 @@ nav:
   - Gleaner: index.md
 
   - Running:
-    - Quick Start: quicsktart.md
+    - Quick Start: quickstart.md
     - CLI: cli.md
     - Docker CLI: dockercli.md
   - Configuration: config.md

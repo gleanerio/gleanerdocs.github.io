@@ -1,0 +1,35 @@
+# customized for the Earthcbe docs
+# multi repo does not cascade so this breaks in EC docs... could do a specific version of this for ECdocs
+#    if we want to render gleaner docs from the gleaner repo.
+
+site_name: Gleaner Documentation
+
+repo_url: https://github.com/gleanerio/gleanerdocs.github.io
+edit_uri: blob/docs/
+#theme: 'material'
+#theme: 'mkdocs'
+theme:
+  name: material
+#  name: 'readthedocs'
+  features:
+    #    - content.code.copy
+    - navigation.sections
+
+nav:
+  - Gleaner: index.md
+
+  - Running:
+    - Quick Start: quickstart.md
+    - CLI: cli.md
+    - Docker CLI: dockercli.md
+  - Configuration: config.md
+  - Applications:
+      - Gleaner: gleaner.md
+      - Nabu: nabu.md
+# multi repo does not cascade so this breaks in EC docs... could do a specific version of this for ECdocs
+#    if we want to render gleaner docs from the gleaner repo.
+#      - Gleaner -JSONLD from Page: '!import https://github.com/gleanerio/gleaner?branch=dev_docs'
+#      - Nabu - Upload JSONLD to Graphstores: '!import https://github.com/gleanerio/nabu?branch=dev_docs'
+  - Communities and Fair: faircontext.md
+
+

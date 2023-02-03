@@ -5,7 +5,7 @@
 site_name: Gleaner Documentation
 
 repo_url: https://github.com/gleanerio/gleanerdocs.github.io
-edit_uri: blob/docs/
+edit_uri: blob/docs_mkdocs/docs
 #theme: 'material'
 #theme: 'mkdocs'
 theme:
